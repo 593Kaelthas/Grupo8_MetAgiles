@@ -12,5 +12,8 @@ public class LogIn {
     }
 
     //TODO: Ingresar al sistema
+    public void ingresarSistemaBiblioteca(){
+        System.out.println("MenuPrincipal Biblioteca");
+    }
 
 }

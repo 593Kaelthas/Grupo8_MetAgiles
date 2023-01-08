@@ -1,10 +1,7 @@
 package ec.edu.epn.Controladores;
 
 import com.google.gson.Gson;
-import ec.edu.epn.Modelos.Bibliotecario;
-import ec.edu.epn.Modelos.BibliotecarioDAO;
-import ec.edu.epn.Modelos.LogIn;
-import ec.edu.epn.Modelos.MenuOpciones;
+import ec.edu.epn.Modelos.*;
 import ec.edu.epn.Vistas.BibliotecarioVista;
 import ec.edu.epn.Vistas.LogInVista;
 import ec.edu.epn.Vistas.MenuOpcionesVista;
@@ -33,7 +30,7 @@ public class MenuOpcionesControlador {
         BibliotecarioDAO bibliotecarioDAO = new BibliotecarioDAO(gson, bibliotecarios);
 
 
-        //LogIn logIn = new LogIn();
+
         switch (opcionSeleccionada) {
             case 1: {
 
@@ -47,10 +44,14 @@ public class MenuOpcionesControlador {
                 break;
             }
             case 2: {
-                LogInControlador logInControlador = new LogInControlador( bibliotecarioDAO);
+                MenuPrincipalSistemaBiblioteca menuPrincipalSistemaBiblioteca = new MenuPrincipalSistemaBiblioteca();
+                LogIn logIn = new LogIn(menuPrincipalSistemaBiblioteca);
+                LogInControlador logInControlador = new LogInControlador( bibliotecarioDAO, logIn);
                 LogInVista logInVista = new LogInVista(logInControlador, scanner);
 
                 logInVista.mostrarMenuLogIn();
+
+
 
 
                 break;
