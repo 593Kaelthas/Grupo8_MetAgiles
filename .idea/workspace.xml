@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3b978cc-9c92-4f6d-be1e-48f3cf9c3328" name="Changes" comment="Creación Paquetes y clases">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controladores/controlador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Vistas/view.java" afterDir="false" />
+    <list default="true" id="e3b978cc-9c92-4f6d-be1e-48f3cf9c3328" name="Changes" comment="Inicio de aplicación">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/MenuOpcionesControlador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/MenuOpciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/SistemaBibliotecario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Vistas/MenuOpcionesVista.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/Bibliotecario.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +32,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2K1ATEiIByj59rG9rXh14ylvM5m" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673131725375</updated>
-      <workItem from="1673131726797" duration="675000" />
+      <workItem from="1673131726797" duration="9009000" />
     </task>
     <task id="LOCAL-00001" summary="Creación Paquetes y clases">
       <created>1673132310554</created>
@@ -58,7 +64,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673132310554</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Creación Paquetes(vistas y controladores)">
+      <created>1673132472179</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673132472179</updated>
+    </task>
+    <task id="LOCAL-00003" summary="asdasd">
+      <created>1673132562634</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673132562634</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -77,6 +97,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creación Paquetes y clases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creación Paquetes y clases" />
+    <MESSAGE value="Creación Paquetes(vistas y controladores)" />
+    <MESSAGE value="asdasd" />
+    <MESSAGE value="Inicio de aplicación" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inicio de aplicación" />
   </component>
 </project>
