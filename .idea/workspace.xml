@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3b978cc-9c92-4f6d-be1e-48f3cf9c3328" name="Changes" comment="Implementación Registro Bibliotecarios">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/LogInControlador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/LogIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Vistas/LogInVista.java" afterDir="false" />
+    <list default="true" id="e3b978cc-9c92-4f6d-be1e-48f3cf9c3328" name="Changes" comment="Refactorización Registro Bibliotecarios">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/BibliotecarioControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/BibliotecarioControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/LogInControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/LogInControlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/MenuOpcionesControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/MenuOpcionesControlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Files/backup_bibliotecarios.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Files/backup_bibliotecarios.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/BibliotecarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/BibliotecarioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/LogIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Vistas/BibliotecarioVista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Vistas/BibliotecarioVista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Vistas/LogInVista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Vistas/LogInVista.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1673131725375</updated>
       <workItem from="1673131726797" duration="23906000" />
-      <workItem from="1673189806118" duration="6492000" />
+      <workItem from="1673189806118" duration="9898000" />
     </task>
     <task id="LOCAL-00001" summary="Creación Paquetes y clases">
       <created>1673132310554</created>
@@ -123,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673195583033</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactorización Registro Bibliotecarios">
+      <created>1673198704890</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673198704890</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +154,8 @@
     <MESSAGE value="asdasd" />
     <MESSAGE value="Inicio de aplicación" />
     <MESSAGE value="Implementación Registro Bibliotecarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementación Registro Bibliotecarios" />
+    <MESSAGE value="Refactorización Registro Bibliotecarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactorización Registro Bibliotecarios" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

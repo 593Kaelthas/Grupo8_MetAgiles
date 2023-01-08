@@ -1,10 +1,13 @@
 package ec.edu.epn.Modelos;
 
 import com.google.gson.Gson;
+import ec.edu.epn.Controladores.MenuOpcionesControlador;
+
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import java.io.PrintWriter;
 import java.util.Map;
 
 public class BibliotecarioDAO implements BibliotecarioDAOInterface {
@@ -28,6 +31,7 @@ public class BibliotecarioDAO implements BibliotecarioDAOInterface {
 
     @Override
     public Bibliotecario getBibliotecario(String idUsuario) {
+        //TODO: Buscar el bibliotecario en el archivo JSON
         return null;
     }
 
@@ -57,18 +61,19 @@ public class BibliotecarioDAO implements BibliotecarioDAOInterface {
 
 
 
-
     private void guardarBibliotecarios(){
         try (FileWriter writer = new FileWriter(backup_bibliotecarios)){
             String json = gson.toJson(bibliotecarios.values());
-            writer.write(json);
-
-            System.out.println("-----Se guardó exitosamente el Bibliotecario-----");
-
+            writer.write(json + "\t");
+            System.out.println("-----Se guardó exitosamente el Bibliotecario-----" + "\n");
+            MenuOpcionesControlador.mostrarMenu();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
+
+
 
 
 }

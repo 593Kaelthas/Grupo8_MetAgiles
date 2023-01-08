@@ -40,6 +40,7 @@ public class BibliotecarioVista {
 
         System.out.println("Dirección:");
         String direccion = scanner.nextLine();
+
         bibliotecarioControlador.setDireccion(direccion);
 
         System.out.println("ID Usuario(Unique):");

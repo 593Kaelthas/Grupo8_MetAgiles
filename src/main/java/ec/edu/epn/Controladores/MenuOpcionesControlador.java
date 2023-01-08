@@ -24,15 +24,16 @@ public class MenuOpcionesControlador {
         int opcionSeleccionada = MenuOpcionesVista.getOpcionSeleccionada();
 
         //TO DO: logica restante
+        Gson gson = new Gson();
+        Map<String, Bibliotecario> bibliotecarios = new HashMap<>();
+
+        Scanner scanner = new Scanner(System.in);
+        Bibliotecario bibliotecario = new Bibliotecario("fsd","","","","","","");
+        BibliotecarioDAO bibliotecarioDAO = new BibliotecarioDAO(gson,bibliotecarios );
 
             switch (opcionSeleccionada){
                 case 1: {
-                    Gson gson = new Gson();
-                    Map<String, Bibliotecario> bibliotecarios = new HashMap<>();
-                    
-                    Scanner scanner = new Scanner(System.in);
-                    Bibliotecario bibliotecario = new Bibliotecario("fsd","","","","","","");
-                    BibliotecarioDAO bibliotecarioDAO = new BibliotecarioDAO(gson,bibliotecarios );
+
                     BibliotecarioControlador bibliotecarioControlador = new BibliotecarioControlador(bibliotecario,bibliotecarioDAO);
                     BibliotecarioVista bibliotecarioVista = new BibliotecarioVista(bibliotecarioControlador,scanner);
 
