@@ -11,13 +11,13 @@ public class BibliotecarioControladorTest {
 
     @Test
     public void when_create_bibliotecario_check_equals(){
-        String nombre = "Carolina";
-        String apellido = "Pantoja";
-        String cedula = "1726085564";
-        String telefono = "0987858957";
-        String direccion = "Mena del Hierro";
-        String idUsuario = "Caro";
-        String password = "caro123";
+        String nombre = "Jimmy";
+        String apellido = "Q.";
+        String cedula = "1726060435";
+        String telefono = "0987540180";
+        String direccion = "Av. Maldonado";
+        String idUsuario = "593kaelthas";
+        String password = "1234";
         Bibliotecario bibliotecario = new Bibliotecario(nombre,apellido, cedula, telefono, direccion, idUsuario, password);
         BibliotecarioDAO bibliotecarioDAO = new BibliotecarioDAO();
         BibliotecarioControlador bibliotecarioControlador = new BibliotecarioControlador(bibliotecario, bibliotecarioDAO);
