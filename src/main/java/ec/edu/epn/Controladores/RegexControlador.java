@@ -5,6 +5,10 @@ import ec.edu.epn.Modelos.Regex;
 public class RegexControlador {
     private Regex regex;
 
+    public RegexControlador() {
+        this.regex = new Regex();
+    }
+
     public boolean usarValidarNombre(String nombre){
         return regex.validarNombre(nombre);
     }

@@ -18,8 +18,8 @@ public class Regex {
             {
                 int tercerDigito = Integer.parseInt(cedula.substring(2, 3));
                 if (tercerDigito < 6) {
-    // Coeficientes de validación cédula
-    // El decimo digito se lo considera dígito verificador
+                    // Coeficientes de validación cédula
+                    // El decimo digito se lo considera dígito verificador
                     int[] coefValCedula = {2, 1, 2, 1, 2, 1, 2, 1, 2};
                     int verificador = Integer.parseInt(cedula.substring(9, 10));
                     int suma = 0;
