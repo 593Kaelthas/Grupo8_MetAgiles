@@ -20,7 +20,9 @@ public class BibliotecarioDAO implements BibliotecarioDAOInterface {
         this.bibliotecarios = bibliotecarios;
         cargarBibliotecarios();
     }
+    public BibliotecarioDAO(){
 
+    }
     @Override
     public void crearBibliotecario(Bibliotecario bibliotecario) {
         bibliotecarios.put(bibliotecario.getIdUsuario(), bibliotecario);

@@ -16,9 +16,18 @@ public class BibliotecarioControlador {
         bibliotecario.setNombre(nombre);
     }
 
-    public void setApellidoBibliotecario( String apellido){
+    public Bibliotecario getBibliotecario() {
+        return bibliotecario;
+    }
+
+    public BibliotecarioDAO getBibliotecarioDAO() {
+        return bibliotecarioDAO;
+    }
+
+    public void setApellidoBibliotecario(String apellido){
         bibliotecario.setApellido(apellido);
     }
+
     public void setCedula( String cedula){
         bibliotecario.setCedula(cedula);
     }
@@ -31,6 +40,7 @@ public class BibliotecarioControlador {
     public void setIdUsuario( String idUsuario){
         bibliotecario.setIdUsuario(idUsuario);
     }
+
     public void setPassword( String password){
         bibliotecario.setPassword(password);
     }

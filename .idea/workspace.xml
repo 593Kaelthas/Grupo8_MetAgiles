@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3b978cc-9c92-4f6d-be1e-48f3cf9c3328" name="Changes" comment="Implementación parcial del LogIn">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/LogInControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/LogInControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/MenuOpcionesControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/MenuOpcionesControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Files/backup_bibliotecarios.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Files/backup_bibliotecarios.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/LogIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/MenuPrincipalSistemaBiblioteca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/MenuPrincipalSistemaBiblioteca.java" afterDir="false" />
+    <list default="true" id="e3b978cc-9c92-4f6d-be1e-48f3cf9c3328" name="Changes" comment="Inicio de aplicación">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/BibliotecarioControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/BibliotecarioControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/BibliotecarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/BibliotecarioDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +55,7 @@
       <recent name="ec.edu.epn.Controladores" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.BibliotecarioControladorTest.when_create_bibliotecario_check_equals (1)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ec.edu.epn.Main" />
       <module name="Grupo8_MetAgiles" />
@@ -73,8 +69,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BibliotecarioControladorTest.when_create_bibliotecario_check_equals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Grupo8_MetAgiles" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BibliotecarioControladorTest" />
+      <option name="METHOD_NAME" value="when_create_bibliotecario_check_equals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BibliotecarioControladorTest.when_create_bibliotecario_check_equals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Grupo8_MetAgiles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ec.edu.epn.Controladores.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ec.edu.epn.Controladores" />
+      <option name="MAIN_CLASS_NAME" value="ec.edu.epn.Controladores.BibliotecarioControladorTest" />
+      <option name="METHOD_NAME" value="when_create_bibliotecario_check_equals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BibliotecarioControladorTest.when_create_bibliotecario_check_equals (1)" />
+        <item itemvalue="JUnit.BibliotecarioControladorTest.when_create_bibliotecario_check_equals" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
