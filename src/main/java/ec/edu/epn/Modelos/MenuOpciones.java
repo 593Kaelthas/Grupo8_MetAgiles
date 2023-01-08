@@ -8,9 +8,9 @@ public class MenuOpciones {
 
     public MenuOpciones() {
         opciones = new ArrayList<>();
-        opciones.add("Registrar Bibliotecario");
-        opciones.add("Ingresar al Sistema");
-        opciones.add("Salir");
+        opciones.add(" Registrar Bibliotecario");
+        opciones.add(" Ingresar al Sistema");
+        opciones.add(" Salir");
 
     }
 
