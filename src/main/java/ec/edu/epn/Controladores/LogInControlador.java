@@ -2,6 +2,7 @@ package ec.edu.epn.Controladores;
 
 import ec.edu.epn.Modelos.Bibliotecario;
 import ec.edu.epn.Modelos.BibliotecarioDAO;
+import ec.edu.epn.Modelos.LogIn;
 
 public class LogInControlador {
 
@@ -21,6 +22,7 @@ public class LogInControlador {
                 System.out.println("---Contraseña Incorrecta---");
                 //TODO: Presentar nuevamente el menu de login
             } else {
+                //LogIn logIn = new
                 //TODO: Despliega el menu principal
             }
         }

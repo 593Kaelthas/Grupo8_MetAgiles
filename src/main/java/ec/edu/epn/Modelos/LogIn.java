@@ -5,10 +5,11 @@ import java.util.Scanner;
 
 public class LogIn {
 
+    private MenuPrincipalSistemaBiblioteca menuPrincipalSistemaBiblioteca;
 
-    //public void mostrarFormulario
-
-    //TODO: Verificar IDUSUARIO Y CONTRASEÑA
+    public LogIn(MenuPrincipalSistemaBiblioteca menuPrincipalSistemaBiblioteca) {
+        this.menuPrincipalSistemaBiblioteca = menuPrincipalSistemaBiblioteca;
+    }
 
     //TODO: Ingresar al sistema
 

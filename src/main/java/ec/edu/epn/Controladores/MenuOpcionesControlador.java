@@ -3,8 +3,10 @@ package ec.edu.epn.Controladores;
 import com.google.gson.Gson;
 import ec.edu.epn.Modelos.Bibliotecario;
 import ec.edu.epn.Modelos.BibliotecarioDAO;
+import ec.edu.epn.Modelos.LogIn;
 import ec.edu.epn.Modelos.MenuOpciones;
 import ec.edu.epn.Vistas.BibliotecarioVista;
+import ec.edu.epn.Vistas.LogInVista;
 import ec.edu.epn.Vistas.MenuOpcionesVista;
 
 import java.util.List;
@@ -15,11 +17,10 @@ import java.util.Scanner;
 public class MenuOpcionesControlador {
 
 
-
     //mostrar menuPrincipal
-    public static void mostrarMenu(){
+    public static void mostrarMenu() {
         MenuOpciones menuOpciones = new MenuOpciones();
-        List <String> opciones = menuOpciones.getOpciones();
+        List<String> opciones = menuOpciones.getOpciones();
         MenuOpcionesVista.mostrarMenu(opciones);
         int opcionSeleccionada = MenuOpcionesVista.getOpcionSeleccionada();
 
@@ -28,49 +29,40 @@ public class MenuOpcionesControlador {
         Map<String, Bibliotecario> bibliotecarios = new HashMap<>();
 
         Scanner scanner = new Scanner(System.in);
-        Bibliotecario bibliotecario = new Bibliotecario("fsd","","","","","","");
-        BibliotecarioDAO bibliotecarioDAO = new BibliotecarioDAO(gson,bibliotecarios );
-
-            switch (opcionSeleccionada){
-                case 1: {
-
-                    BibliotecarioControlador bibliotecarioControlador = new BibliotecarioControlador(bibliotecario,bibliotecarioDAO);
-                    BibliotecarioVista bibliotecarioVista = new BibliotecarioVista(bibliotecarioControlador,scanner);
-
-                    bibliotecarioVista.mostrarFormularioEInstanciarBibliotecario();
-                    bibliotecarioDAO.crearBibliotecario(bibliotecario);
+        Bibliotecario bibliotecario = new Bibliotecario("fsd", "", "", "", "", "", "");
+        BibliotecarioDAO bibliotecarioDAO = new BibliotecarioDAO(gson, bibliotecarios);
 
 
+        //LogIn logIn = new LogIn();
+        switch (opcionSeleccionada) {
+            case 1: {
 
-                    break;
-                }
-                case 2: {
+                BibliotecarioControlador bibliotecarioControlador = new BibliotecarioControlador(bibliotecario, bibliotecarioDAO);
+                BibliotecarioVista bibliotecarioVista = new BibliotecarioVista(bibliotecarioControlador, scanner);
 
-
-                    break;
-                }
-                case 3: {
-                    System.out.println("----Gracias Por utilizar nuestro sistema------ )");
-                    System.exit(0);
-                    break;
-                }
+                bibliotecarioVista.mostrarFormularioEInstanciarBibliotecario();
+                bibliotecarioDAO.crearBibliotecario(bibliotecario);
 
 
+                break;
+            }
+            case 2: {
+                LogInControlador logInControlador = new LogInControlador( bibliotecarioDAO);
+                LogInVista logInVista = new LogInVista(logInControlador, scanner);
+
+                logInVista.mostrarMenuLogIn();
 
 
-
-
-
+                break;
+            }
+            case 3: {
+                System.out.println("----Gracias Por utilizar nuestro sistema------ )");
+                System.exit(0);
+                break;
+            }
 
 
         }
-
-
-
-
-
-
-
 
 
     }

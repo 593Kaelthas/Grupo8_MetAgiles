@@ -32,7 +32,8 @@ public class BibliotecarioDAO implements BibliotecarioDAOInterface {
     @Override
     public Bibliotecario getBibliotecario(String idUsuario) {
         //TODO: Buscar el bibliotecario en el archivo JSON
-        return null;
+        Bibliotecario bibliotecario = bibliotecarios.get(idUsuario);
+        return bibliotecario;
     }
 
     @Override

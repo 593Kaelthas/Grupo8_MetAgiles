@@ -15,6 +15,12 @@ public class LogInVista {
 
     public void mostrarMenuLogIn(){
         System.out.println("---Inicio de Sesión---");
+        System.out.println("Identificador de Usuario:");
+        String idUsuario = scanner.nextLine();
+        System.out.println("Contraseña:");
+        String password = scanner.nextLine();
+
+        logInControlador.manejarSolicitudLogIn(idUsuario,password);
 
     }
 }
