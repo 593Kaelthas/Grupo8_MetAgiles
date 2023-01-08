@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3b978cc-9c92-4f6d-be1e-48f3cf9c3328" name="Changes" comment="Implementación parcial del LogIn (hora de almuerzo)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/MenuPrincipalSistemaBiblioteca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/LogInControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/LogInControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/MenuOpcionesControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/MenuOpcionesControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/BibliotecarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/BibliotecarioDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/LogIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Vistas/LogInVista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Vistas/LogInVista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/RegexControlador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/Regex.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +41,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\softj\IdeaProjects\Grupo8_MetAgiles\src\main\java\ec\edu\epn\Files" />
       <recent name="C:\Users\softj\IdeaProjects\Grupo8_MetAgiles\src\main\java\ec\edu\epn" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ec.edu.epn.Modelos" />
+      <recent name="ec.edu.epn.Controladores" />
     </key>
   </component>
   <component name="RunManager">
