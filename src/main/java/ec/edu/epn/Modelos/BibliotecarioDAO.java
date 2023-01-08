@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.Map;
 
 public class BibliotecarioDAO implements BibliotecarioDAOInterface {
-    private static final String backup_bibliotecarios = "backup_bibliotecarios.json";
+    private static final String backup_bibliotecarios = "src/main/java/ec/edu/epn/Files/backup_bibliotecarios.json";
     private Gson gson;
     private Map<String, Bibliotecario> bibliotecarios;
 
@@ -63,7 +63,7 @@ public class BibliotecarioDAO implements BibliotecarioDAOInterface {
             String json = gson.toJson(bibliotecarios.values());
             writer.write(json);
 
-            System.out.println("Se guardó exitosamente el Bibliotecario");
+            System.out.println("-----Se guardó exitosamente el Bibliotecario-----");
 
         } catch (IOException e) {
             e.printStackTrace();

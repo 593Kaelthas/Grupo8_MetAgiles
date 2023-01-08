@@ -40,15 +40,15 @@ public class BibliotecarioVista {
 
         System.out.println("Dirección:");
         String direccion = scanner.nextLine();
-        bibliotecarioControlador.setTelefono(direccion);
+        bibliotecarioControlador.setDireccion(direccion);
 
         System.out.println("ID Usuario(Unique):");
         String idUsuario = scanner.nextLine();
-        bibliotecarioControlador.setTelefono(idUsuario);
+        bibliotecarioControlador.setIdUsuario(idUsuario);
 
         System.out.println("Password:");
         String password = scanner.nextLine();
-        bibliotecarioControlador.setTelefono(password);
+        bibliotecarioControlador.setPassword(password);
 
 
 

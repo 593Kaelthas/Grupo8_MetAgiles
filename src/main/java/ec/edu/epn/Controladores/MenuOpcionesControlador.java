@@ -31,7 +31,7 @@ public class MenuOpcionesControlador {
                     Map<String, Bibliotecario> bibliotecarios = new HashMap<>();
                     
                     Scanner scanner = new Scanner(System.in);
-                    Bibliotecario bibliotecario = new Bibliotecario("","","","","","","");
+                    Bibliotecario bibliotecario = new Bibliotecario("fsd","","","","","","");
                     BibliotecarioDAO bibliotecarioDAO = new BibliotecarioDAO(gson,bibliotecarios );
                     BibliotecarioControlador bibliotecarioControlador = new BibliotecarioControlador(bibliotecario,bibliotecarioDAO);
                     BibliotecarioVista bibliotecarioVista = new BibliotecarioVista(bibliotecarioControlador,scanner);
@@ -45,10 +45,11 @@ public class MenuOpcionesControlador {
                 }
                 case 2: {
 
+
                     break;
                 }
                 case 3: {
-                    System.out.println("Gracias Por utilizar nuestro sistema :)");
+                    System.out.println("----Gracias Por utilizar nuestro sistema------ )");
                     System.exit(0);
                     break;
                 }
