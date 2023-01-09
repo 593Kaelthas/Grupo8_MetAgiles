@@ -54,6 +54,7 @@ public class LibroDAO implements LibroDAOInterface {
         //TODO: Buscar el libro en el archivo JSON
         cargarLibros();
         Libro libro = libros.get(isbn);
+        guardarLibros();
         return libro;
     }
 

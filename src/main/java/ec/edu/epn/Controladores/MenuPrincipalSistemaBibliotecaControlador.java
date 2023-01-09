@@ -36,7 +36,7 @@ public class MenuPrincipalSistemaBibliotecaControlador {
             }
             case 2: {
                 int respuesta = 0;
-                do{
+                while(respuesta == 0){
                     libroVista.menuLibro();
                     switch (libroVista.getOpcionSeleccionada()){
                         case 1:{
@@ -62,7 +62,7 @@ public class MenuPrincipalSistemaBibliotecaControlador {
                             break;
                         }
                     }
-                }while(respuesta == 0);
+                }
 
                 break;
             }
