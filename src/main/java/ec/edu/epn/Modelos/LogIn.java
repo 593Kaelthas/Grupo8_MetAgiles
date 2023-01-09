@@ -1,5 +1,6 @@
 package ec.edu.epn.Modelos;
 import ec.edu.epn.Controladores.LogInControlador;
+import ec.edu.epn.Vistas.MenuPrincipalSistemaBibliotecaVista;
 
 import java.util.Scanner;
 
@@ -13,7 +14,7 @@ public class LogIn {
 
     //TODO: Ingresar al sistema
     public void ingresarSistemaBiblioteca(){
-        System.out.println("MenuPrincipal Biblioteca");
+        MenuPrincipalSistemaBibliotecaVista.mostrarMenu(menuPrincipalSistemaBiblioteca.getOpciones());
     }
 
 }
