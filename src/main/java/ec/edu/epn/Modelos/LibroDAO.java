@@ -17,6 +17,9 @@ public class LibroDAO implements LibroDAOInterface {
         this.gson = gson;
         this.libros = libros;
     }
+    public LibroDAO(){
+
+    }
 
     private void guardarLibros(){
         try (FileWriter writer = new FileWriter(backup_libros)){

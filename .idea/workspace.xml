@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3b978cc-9c92-4f6d-be1e-48f3cf9c3328" name="Changes" comment="Menu libro implementación">
+      <change afterPath="$PROJECT_DIR$/src/Test/java/LibroControladorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/MenuPrincipalSistemaBibliotecaControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/MenuPrincipalSistemaBibliotecaControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Files/backup_libros.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Files/backup_libros.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/BibliotecarioControladorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/java/BibliotecarioControladorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/LibroDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/LibroDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,14 +19,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,6 +47,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
     "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "B:/Documentos/SEXTO/PRACTICAS/Grupo8_MetAgiles/src/Test",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -62,7 +62,11 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="B:\Documentos\SEXTO\PRACTICAS\Grupo8_MetAgiles\src\Test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="B:\Documentos\SEXTO\PRACTICAS\Grupo8_MetAgiles\src\Test\java" />
       <recent name="C:\Users\softj\IdeaProjects\Grupo8_MetAgiles\src\main\java\ec\edu\epn\Files" />
       <recent name="C:\Users\softj\IdeaProjects\Grupo8_MetAgiles\src\main\java\ec\edu\epn" />
     </key>
@@ -78,7 +82,7 @@
       <recent name="ec.edu.epn.Modelos" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.LibroControladorTest.when_add_book_check_equals (1)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ec.edu.epn.Main" />
       <module name="Grupo8_MetAgiles" />
@@ -88,22 +92,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BibliotecarioControladorTest.when_create_bibliotecario_check_equals (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Grupo8_MetAgiles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ec.edu.epn.Controladores.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ec.edu.epn.Controladores" />
-      <option name="MAIN_CLASS_NAME" value="ec.edu.epn.Controladores.BibliotecarioControladorTest" />
-      <option name="METHOD_NAME" value="when_create_bibliotecario_check_equals" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,6 +110,22 @@
       <module name="Grupo8_MetAgiles" />
       <extension name="coverage">
         <pattern>
+          <option name="PATTERN" value="ec.edu.epn.Files.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ec.edu.epn.Files" />
+      <option name="MAIN_CLASS_NAME" value="ec.edu.epn.Files.BibliotecarioControladorTest" />
+      <option name="METHOD_NAME" value="when_create_bibliotecario_check_equals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BibliotecarioControladorTest.when_create_bibliotecario_check_equals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Grupo8_MetAgiles" />
+      <extension name="coverage">
+        <pattern>
           <option name="PATTERN" value="ec.edu.epn.Controladores.*" />
           <option name="ENABLED" value="true" />
         </pattern>
@@ -134,8 +138,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LibroControladorTest.when_add_book_check_equals (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Grupo8_MetAgiles" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LibroControladorTest" />
+      <option name="METHOD_NAME" value="when_add_book_check_equals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibroControladorTest.when_add_book_check_equals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Grupo8_MetAgiles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ec.edu.epn.Files.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ec.edu.epn.Controladores" />
+      <option name="MAIN_CLASS_NAME" value="ec.edu.epn.Controladores.LibroControladorTest" />
+      <option name="METHOD_NAME" value="when_add_book_check_equals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibroControladorTest.when_add_book_check_equals (1)" />
+        <item itemvalue="JUnit.LibroControladorTest.when_add_book_check_equals" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.BibliotecarioControladorTest.when_create_bibliotecario_check_equals (1)" />
         <item itemvalue="JUnit.BibliotecarioControladorTest.when_create_bibliotecario_check_equals" />
