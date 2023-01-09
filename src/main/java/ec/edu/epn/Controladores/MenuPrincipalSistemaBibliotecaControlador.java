@@ -18,6 +18,22 @@ public class MenuPrincipalSistemaBibliotecaControlador {
         switch (opcionSeleccionada) {
             case 1: {
                 System.out.println("fsdfsd");
+                break;
+            }
+            case 2: {
+                break;
+            }
+            case 3: {
+                break;
+            }
+            case 4: {
+                break;
+
+            }
+            case 5: {
+                System.out.println("----Gracias Por utilizar nuestro sistema------ )");
+                System.exit(0);
+                break;
             }
 
         }
