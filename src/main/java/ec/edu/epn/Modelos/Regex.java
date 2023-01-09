@@ -50,7 +50,6 @@ public class Regex {
         }
         return cedulaCorrecta;
     }
-
     public boolean validarTelefono(String telefono) {
         return telefono.matches("^09\\d{8}$");
     }
@@ -63,8 +62,47 @@ public class Regex {
         return idUsuario.matches("[a-zA-Z]((\\.|_|-)?[a-zA-Z0-9]+){3}");
     }
 
+    /*
+    Min lengh 8
+    Max lengh 16
+    Min: una mayúscula, minúscula, caracter especial y número
+     */
     public boolean validarPassword(String password){
         return password.matches("^(?=.*\\d)(?=.*[\\u0021-\\u002b\\u003c-\\u0040])(?=.*[A-Z])(?=.*[a-z])\\S{8,16}$");
     }
 
+    public boolean validarTituloLibro(String titulo) {
+        return titulo.matches("^[a-zA-Z\\u00C0-\\u017F\\s]+$");
+    }
+
+    public boolean validarAutorLibro(String autor) {
+        return autor.matches("^[a-zA-Z\\u00C0-\\u017F\\s]+$");
+    }
+
+    public boolean validarGeneroLibro(String genero) {
+        return genero.matches("^[a-zA-Z\\u00C0-\\u017F\\s]+$");
+    }
+
+    public boolean validarAnoPunlicacionLibro(String anoPublicacion) {
+        return anoPublicacion.matches("^(1|2)\\d{3}$");
+    }
+
+    /*
+    Ejemplos de ISBN
+    ISBN 978-0-596-52068-7
+    ISBN-13: 978-0-596-52068-7
+    978 0 596 52068 7
+    9780596520687
+    ISBN-10 0-596-52068-9
+    0-596-52068-9
+   */
+    public boolean validarIsbnLibro(String isbn) {
+        return isbn.matches("^(?:ISBN(?:-1[03])?:? )?(?=[0-9X]{10}$|(?=(?:[0-9]+[- ]){3})[- 0-9X]{13}$|97[89][0-9]{10}$|(?=(?:[0-9]+[- ]){4})[- 0-9]{17}$)(?:97[89][- ]?)?[0-9]{1,5}[- ]?[0-9]+[- ]?[0-9]+[- ]?[0-9X]$");
+    }
+
+    public boolean validarStockLibro(int stock) {
+        String stockString = stock + "";
+        return stockString.matches("^[0-9]{3}$");
+
+    }
 }

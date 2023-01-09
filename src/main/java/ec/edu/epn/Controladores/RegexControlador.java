@@ -36,4 +36,22 @@ public class RegexControlador {
     public boolean usarValidarPassword(String password){
         return regex.validarPassword(password);
     }
+    public boolean usarValidarTituloLibro(String titulo){
+        return regex.validarTituloLibro(titulo);
+    }
+    public boolean usarValidarAutorLibro(String autor){
+        return regex.validarAutorLibro(autor);
+    }
+    public boolean usarValidarGeneroLibro(String genero){
+        return regex.validarGeneroLibro(genero);
+    }
+    public boolean usarValidarAnoPublicacionLibro(String anoPublicacion){
+        return regex.validarAnoPunlicacionLibro(anoPublicacion);
+    }
+    public boolean usarValidarIsbnLibro(String isbn){
+        return regex.validarIsbnLibro(isbn);
+    }
+    public boolean usarValidarStockLibro(int stock){
+        return regex.validarStockLibro(stock);
+    }
 }
