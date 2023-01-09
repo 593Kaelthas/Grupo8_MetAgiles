@@ -1,17 +1,13 @@
 package ec.edu.epn.Controladores;
 
 import com.google.gson.Gson;
-import ec.edu.epn.Modelos.Libro;
-import ec.edu.epn.Modelos.LibroDAO;
-import ec.edu.epn.Modelos.MenuPrincipalSistemaBiblioteca;
+import ec.edu.epn.Modelos.*;
 import ec.edu.epn.Vistas.LibroDAOVista;
 import ec.edu.epn.Vistas.LibroVista;
 import ec.edu.epn.Vistas.MenuPrincipalSistemaBibliotecaVista;
+import ec.edu.epn.Vistas.PrestamistaVista;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class MenuPrincipalSistemaBibliotecaControlador {
 
@@ -24,6 +20,7 @@ public class MenuPrincipalSistemaBibliotecaControlador {
 
         Gson gson = new Gson();
         Map<String, Libro> libros = new HashMap<>();
+        Map<String, Prestamista> prestamistas = new HashMap<>();
         Libro libro = new Libro();
         LibroDAO libroDAO = new LibroDAO(gson, libros);
         LibroControlador libroControlador = new LibroControlador(libro, libroDAO);
@@ -32,6 +29,14 @@ public class MenuPrincipalSistemaBibliotecaControlador {
 
         switch (opcionSeleccionada) {
             case 1: {
+                List <Libro> librosAdquiridos = new ArrayList<>();
+                RegexControlador regexControlador = new RegexControlador();
+                Prestamista prestamista = new Prestamista("","","","","", librosAdquiridos, 0);
+                PrestamistaDAO prestamistaDAO = new PrestamistaDAO(gson, prestamistas);
+                PrestamistaControlador prestamistaControlador = new PrestamistaControlador(prestamista, prestamistaDAO);
+                PrestamistaVista prestamistaVista = new PrestamistaVista(prestamistaControlador,regexControlador,scanner);
+                prestamistaVista.mostrarSubmenu();
+                prestamistaDAO.crearPrestamista(prestamista);
                 break;
             }
             case 2: {
