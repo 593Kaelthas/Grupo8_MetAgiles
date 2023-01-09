@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3b978cc-9c92-4f6d-be1e-48f3cf9c3328" name="Changes" comment="Implementación LogIn">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/MenuPrincipalSistemaBibliotecaControlador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Vistas/MenuPrincipalSistemaBibliotecaVista.java" afterDir="false" />
+    <list default="true" id="e3b978cc-9c92-4f6d-be1e-48f3cf9c3328" name="Changes" comment="Implementación Menu Principal Sistema">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/MenuOpcionesControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/MenuOpcionesControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/MenuPrincipalSistemaBibliotecaControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/MenuPrincipalSistemaBibliotecaControlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/LogIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/MenuPrincipalSistemaBiblioteca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/MenuPrincipalSistemaBiblioteca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Vistas/MenuPrincipalSistemaBibliotecaVista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Vistas/MenuPrincipalSistemaBibliotecaVista.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +149,7 @@
       <workItem from="1673189806118" duration="14488000" />
       <workItem from="1673217792327" duration="681000" />
       <workItem from="1673218500239" duration="206000" />
-      <workItem from="1673219423744" duration="3787000" />
+      <workItem from="1673219423744" duration="5971000" />
     </task>
     <task id="LOCAL-00001" summary="Creación Paquetes y clases">
       <created>1673132310554</created>
@@ -214,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673218086687</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Implementación Menu Principal Sistema">
+      <created>1673223678612</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673223678612</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +249,8 @@
     <MESSAGE value="Implementación parcial del LogIn (hora de almuerzo)" />
     <MESSAGE value="Implementación parcial del LogIn" />
     <MESSAGE value="Prueba Registro Bibliotecario" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prueba Registro Bibliotecario" />
+    <MESSAGE value="Implementación Menu Principal Sistema" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementación Menu Principal Sistema" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

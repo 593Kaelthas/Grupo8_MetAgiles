@@ -10,7 +10,7 @@ public class MenuPrincipalSistemaBibliotecaControlador {
     public static void mostrarMenu(){
         MenuPrincipalSistemaBiblioteca menuPrincipalSistemaBiblioteca = new MenuPrincipalSistemaBiblioteca();
         List <String> opciones = menuPrincipalSistemaBiblioteca.getOpciones();
-        //MenuPrincipalSistemaBibliotecaVista.mostrarMenu(opciones);
+        MenuPrincipalSistemaBibliotecaVista.mostrarMenuOpciones(opciones);
         int opcionSeleccionada = MenuPrincipalSistemaBibliotecaVista.getOpcionSeleccionada();
 
 

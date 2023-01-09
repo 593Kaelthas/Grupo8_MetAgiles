@@ -29,6 +29,8 @@ public class MenuOpcionesControlador {
         Bibliotecario bibliotecario = new Bibliotecario("fsd", "", "", "", "", "", "");
         BibliotecarioDAO bibliotecarioDAO = new BibliotecarioDAO(gson, bibliotecarios);
 
+        MenuPrincipalSistemaBiblioteca menuPrincipalSistemaBiblioteca = new MenuPrincipalSistemaBiblioteca();
+        LogIn logIn = new LogIn(menuPrincipalSistemaBiblioteca);
 
 
         switch (opcionSeleccionada) {
@@ -44,8 +46,7 @@ public class MenuOpcionesControlador {
                 break;
             }
             case 2: {
-                MenuPrincipalSistemaBiblioteca menuPrincipalSistemaBiblioteca = new MenuPrincipalSistemaBiblioteca();
-                LogIn logIn = new LogIn(menuPrincipalSistemaBiblioteca);
+
                 LogInControlador logInControlador = new LogInControlador( bibliotecarioDAO, logIn);
                 LogInVista logInVista = new LogInVista(logInControlador, scanner);
 
