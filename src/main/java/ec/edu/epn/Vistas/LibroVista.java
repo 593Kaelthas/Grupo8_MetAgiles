@@ -3,17 +3,39 @@ package ec.edu.epn.Vistas;
 import ec.edu.epn.Controladores.LibroControlador;
 import ec.edu.epn.Controladores.RegexControlador;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class LibroVista {
     private LibroControlador libroControlador;
     private RegexControlador regexControlador;
     private Scanner scanner;
+    private List<String> opciones;
 
     public LibroVista(LibroControlador libroControlador, Scanner scanner) {
         this.libroControlador = libroControlador;
         this.regexControlador = new RegexControlador();
         this.scanner = scanner;
+    }
+
+    //Sub-menú
+    public void menuLibro(){
+        opciones = new ArrayList<>();
+        opciones.add("Registrar libro");
+        opciones.add("Buscar libro");
+        opciones.add("Eliminar libro");
+        opciones.add("Actualizar libro");
+        opciones.add("Regresar");
+        System.out.println("-----SISTEMA Libro-----");
+        for (int i=0; i < opciones.size(); i++){
+            System.out.println(i + 1 + "."+ opciones.get(i));
+        }
+        System.out.println("Seleccione una opción:");
+    }
+    public static int getOpcionSeleccionada(){
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextInt();
     }
 
     //Formulario de registro

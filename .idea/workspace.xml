@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3b978cc-9c92-4f6d-be1e-48f3cf9c3328" name="Changes" comment="Implementación Menu Principal Sistema">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/LibroControlador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/Libro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/LibroDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/LibroDAOInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Vistas/LibroVista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/RegexControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/RegexControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/Regex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/Regex.java" afterDir="false" />
+    <list default="true" id="e3b978cc-9c92-4f6d-be1e-48f3cf9c3328" name="Changes" comment="Implementación de manejo de libros, Implementación de validación de datos libro">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/MenuPrincipalSistemaBibliotecaControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Controladores/MenuPrincipalSistemaBibliotecaControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Modelos/Libro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Vistas/LibroVista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Vistas/LibroVista.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673223678612</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Implementación de manejo de libros, Implementación de validación de datos libro">
+      <created>1673231065425</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1673231065425</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +257,8 @@
     <MESSAGE value="Implementación parcial del LogIn" />
     <MESSAGE value="Prueba Registro Bibliotecario" />
     <MESSAGE value="Implementación Menu Principal Sistema" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementación Menu Principal Sistema" />
+    <MESSAGE value="Implementación de manejo de libros, Implementación de validación de datos libro" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementación de manejo de libros, Implementación de validación de datos libro" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

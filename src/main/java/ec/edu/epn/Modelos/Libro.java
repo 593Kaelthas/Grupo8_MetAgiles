@@ -17,6 +17,10 @@ public class Libro {
         this.stock = stock;
     }
 
+    public Libro(){
+
+    }
+
     public String getTitulo() {
         return titulo;
     }
