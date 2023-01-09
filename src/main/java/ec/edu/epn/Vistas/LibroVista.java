@@ -2,6 +2,7 @@ package ec.edu.epn.Vistas;
 
 import ec.edu.epn.Controladores.LibroControlador;
 import ec.edu.epn.Controladores.RegexControlador;
+import ec.edu.epn.Modelos.Libro;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,13 +28,13 @@ public class LibroVista {
         opciones.add("Eliminar libro");
         opciones.add("Actualizar libro");
         opciones.add("Regresar");
-        System.out.println("-----SISTEMA Libro-----");
+        System.out.println("-----SISTEMA LIBRO-----");
         for (int i=0; i < opciones.size(); i++){
             System.out.println(i + 1 + "."+ opciones.get(i));
         }
         System.out.println("Seleccione una opción:");
     }
-    public static int getOpcionSeleccionada(){
+    public int getOpcionSeleccionada(){
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
     }
@@ -96,5 +97,9 @@ public class LibroVista {
         }
         libroControlador.setStockLibro(stock);
 
+    }
+
+    public void mostrarInormacionLibro(Libro libro){
+        System.out.println(libro.toString());
     }
 }

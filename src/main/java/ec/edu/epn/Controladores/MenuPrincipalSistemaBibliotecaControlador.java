@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import ec.edu.epn.Modelos.Libro;
 import ec.edu.epn.Modelos.LibroDAO;
 import ec.edu.epn.Modelos.MenuPrincipalSistemaBiblioteca;
+import ec.edu.epn.Vistas.LibroDAOVista;
 import ec.edu.epn.Vistas.LibroVista;
 import ec.edu.epn.Vistas.MenuPrincipalSistemaBibliotecaVista;
 
@@ -27,13 +28,41 @@ public class MenuPrincipalSistemaBibliotecaControlador {
         LibroDAO libroDAO = new LibroDAO(gson, libros);
         LibroControlador libroControlador = new LibroControlador(libro, libroDAO);
         LibroVista libroVista = new LibroVista(libroControlador, scanner);
+        LibroDAOVista libroDAOVista = new LibroDAOVista();
 
         switch (opcionSeleccionada) {
             case 1: {
-                System.out.println("fsdfsd");
                 break;
             }
             case 2: {
+                int respuesta = 0;
+                do{
+                    libroVista.menuLibro();
+                    switch (libroVista.getOpcionSeleccionada()){
+                        case 1:{
+                            libroVista.mostrarFormularioEInstanciarLibro();
+                            libroDAO.crearLibro(libro);
+                            break;
+                        }
+                        case 2:{
+                            libro = libroDAO.buscarLibro(libroDAOVista.recibirISBN());
+                            libroVista.mostrarInormacionLibro(libro);
+                            break;
+                        }
+                        case 3:{
+                            libroDAO.eliminarLibro(libroDAOVista.recibirISBN());
+                            break;
+                        }
+                        case 4:{
+                            break;
+                        }
+                        case 5:{
+                            System.out.println("Desea seguir en el sitema de libros\n SI-> 0 \n NO -> 1");
+                            respuesta = Integer.parseInt(scanner.nextLine());
+                            break;
+                        }
+                    }
+                }while(respuesta == 0);
 
                 break;
             }

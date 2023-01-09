@@ -58,7 +58,7 @@ public class MenuOpcionesControlador {
                 break;
             }
             case 3: {
-                System.out.println("----Gracias Por utilizar nuestro sistema------ )");
+                System.out.println("----Gracias Por utilizar nuestro sistema------ ");
                 System.exit(0);
                 break;
             }

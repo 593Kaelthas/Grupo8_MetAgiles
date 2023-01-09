@@ -101,8 +101,7 @@ public class Regex {
     }
 
     public boolean validarStockLibro(int stock) {
-        String stockString = stock + "";
-        return stockString.matches("^[0-9]{3}$");
+        return stock > 0;
 
     }
 }

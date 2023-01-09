@@ -30,4 +30,10 @@ public class LibroControlador {
     public void setStockLibro(int stock) {
         libro.setStock(stock);
     }
+    public String getToStringLibro(Libro libro){
+        return libro.toString();
+    }
+    public Libro getLibro(){
+        return libro;
+    }
 }

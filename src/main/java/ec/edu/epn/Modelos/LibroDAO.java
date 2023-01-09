@@ -52,6 +52,7 @@ public class LibroDAO implements LibroDAOInterface {
     @Override
     public Libro buscarLibro(String isbn) {
         //TODO: Buscar el libro en el archivo JSON
+        cargarLibros();
         Libro libro = libros.get(isbn);
         return libro;
     }
@@ -63,6 +64,8 @@ public class LibroDAO implements LibroDAOInterface {
     @Override
     public void eliminarLibro(String isbn) {
         Libro libro = buscarLibro(isbn);
-        libros.remove(isbn, libro);
+        libros.remove(libro.getIsbn(), libro);
+        guardarLibros();
+        System.out.println("-----Se eliminó exitosamente el Libro-----" + "\n");
     }
 }
